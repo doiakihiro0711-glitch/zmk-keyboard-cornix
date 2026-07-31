@@ -37,6 +37,6 @@ manifest:
     #  clone-depth: 1
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: main
+      revision: feat/new-status-screens    # ← main から変更
   self:
     path: config

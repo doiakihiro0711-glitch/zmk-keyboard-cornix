@@ -222,8 +222,8 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        win_layer {
-            display-name = "Windows";
+        Number {
+            display-name = "Num";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -242,8 +242,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Symbol_layer {
-            display-name = "Symbols";
+        Function {
+            display-name = "FN";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // -------------------------------
@@ -263,8 +263,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Adjust_layer {
-            display-name = "Adjust";
+        Navigation {
+            display-name = "Nav";
 
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
@@ -281,8 +281,8 @@
             >;
         };
 
-        Navi_layer {
-            display-name = "Navi";
+        Editor {
+            display-name = "Edit";
             bindings = <
 &TD5          &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_5                       &none     &none     &none      &none  &none  &none
 &kp NUMBER_2  &kp LEFT_SHIFT  &kp N      &kp MINUS             &kp I              &kp LEFT_ALT                       &none     &kp UP    &none      &none  &none  &none

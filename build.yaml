@@ -50,3 +50,6 @@ include:
   - board: xiao_ble//zmk        # ← xiao_ble から変更
     shield: cornix_prospector prospector_adapter
     artifact-name: cornix_dongle_prospector
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    artifact-name: cornix_dongle_prospector_reset

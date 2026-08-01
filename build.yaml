@@ -47,6 +47,6 @@ include:
     shield: settings_reset
     snippet: studio-rpc-usb-uart nrf52840-nosd
     artifact-name: reset_nicenano_nosd
-  - board: xiao_ble
+  - board: xiao_ble//zmk        # ← xiao_ble から変更
     shield: cornix_prospector prospector_adapter
     artifact-name: cornix_dongle_prospector

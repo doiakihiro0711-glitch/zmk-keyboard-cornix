@@ -136,14 +136,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD4";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&to 3>;
+            bindings = <&kp ESC>, <&to 4>;
         };
 
         TD5: TD5 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD5";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&none>;
+            bindings = <&kp NUMBER_1>, <&to 0>;
         };
     };
 

@@ -11,7 +11,7 @@ manifest:
     - name: janpfischer
       url-base: https://github.com/janpfischer
     - name: carrefinho
-      url-base: https://github.com/carrefinho
+      url-base: https://github.com/doiakihiro0711-glitch
   projects:
     - name: zmk
       remote: zmkfirmware

@@ -214,7 +214,7 @@
 &TD4            &kp Q         &kp W         &kp E        &kp R        &kp T                           &kp Y        &kp U            &kp I        &kp O         &kp P             &kp AT
 &kp TAB         &kp A         &kp S         &kp D        &kp F        &kp G                           &kp H        &kp J            &kp K        &kp L         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B        &none  &kp C_MUTE  &kp N        &kp M            &kp MINUS    &kp COMMA     &kp PERIOD        &kp SEMICOLON
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 1 SPACE  &lt 1 SPACE                     &lt 7 ENTER  &lt 7 BACKSPACE  &lt 2 LANG1  &kp QUESTION  &kp EXCLAMATION   &kp SQT
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 1 SPACE  &lt 1 SPACE                     &lt 3 ENTER  &lt 3 BACKSPACE  &lt 2 LANG1  &kp QUESTION  &kp EXCLAMATION   &kp SQT
             >;
 
             sensor-bindings =
@@ -281,13 +281,13 @@
             >;
         };
 
-        Editor {
-            display-name = "Edit";
+        Editor_C1 {
+            display-name = "Edit_C1";
             bindings = <
 &TD5          &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_5                       &none     &none     &none      &none  &none  &none
 &kp NUMBER_2  &kp LEFT_SHIFT  &kp N      &kp MINUS             &kp I              &kp LEFT_ALT                       &none     &kp UP    &none      &none  &none  &none
 &kp NUMBER_3  &kp P           &kp M      &kp NON_US_BACKSLASH  &kp E              &kp G         &kp DEL  &kp C_MUTE  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none
-&kp NUMBER_4  &kp EQUAL       &kp SLASH  &kp LCTRL             &kp LEFT_SHIFT     &kp SPACE                          &none     &none     &none      &none  &none  &none
+&kp NUMBER_4  &kp EQUAL       &kp SLASH  &kp LCTRL             &kp SPACE          &mo 5                              &none     &none     &none      &none  &none  &none
             >;
 
             sensor-bindings =
@@ -295,51 +295,30 @@
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
-        KeyPad_layer {
-            display-name = "NumPad";
+        Editor_C2 {
             bindings = <
-&mo 6  &none  &none  &none  &none  &none                  &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_MINUS  &kp KP_MULTIPLY  &none
-&none  &none  &none  &none  &none  &none                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &none
-&none  &none  &none  &none  &none  &none  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &none         &none            &none
-&none  &none  &none  &none  &none  &mo 6                  &kp KP_N0        &kp KP_DOT       &kp KP_NUMBER_0  &none         &none            &none
+&trans  &trans  &trans    &kp UP    &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT_ARROW  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        Debug_layer {
-            display-name = "Debug";
-
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
-            // | EXTPWR | BTCLR | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
-            // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
-            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
-            //                    |         |         |         |         |         | |      |      |      |       |      |
-
+        layer_6 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &bootloader   &trans  &trans  &bootloader  &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &kp N7  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        Navigate {
+        layer_7 {
             bindings = <
-&trans  &trans  &kp DEL   &kp UP    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "Nav";
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &kp DEL   &kp UP    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

@@ -290,10 +290,10 @@
 
         Editor_C2 {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT_ARROW  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none          &kp DEL    &kp UP     &kp LA(FSLH)     &kp Y                    &none  &none  &none  &none  &none  &none
+&none  &kp LC(LS(N))  &kp LEFT   &kp DOWN   &kp RIGHT_ARROW  &kp GRAVE                &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)      &kp LC(C)  &kp LC(V)  &kp LC(X)        &kp N9     &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none          &none      &none      &none            &none                    &none  &none  &none  &none  &none  &none
             >;
 
             label = "Edit_C2";
@@ -301,21 +301,24 @@
 
         Editor_P1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 7                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp V  &none  &none  &none      &none      &kp C                                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none      &kp B      &mt LEFT_GUI LEFT_ALT                &none  &none  &none  &none  &none  &none
+&none  &kp S  &none  &none      &kp E      &none                  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &kp LSHFT  &kp SPACE  &mo 7                                &none  &none  &none  &none  &none  &none
             >;
 
             label = "Edit_P1";
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Editor_P2 {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LG(DEL)  &kp UP     &kp LG(J)  &none                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp L      &kp LEFT     &kp DOWN   &kp RIGHT  &kp LG(U)                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(A)  &kp LG(C)    &kp LG(V)  &kp LG(X)  &kp LG(B)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans       &trans     &trans     &trans                     &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Edit_P2";

@@ -218,7 +218,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&TD4            &kp Q         &kp W         &kp E        &kp R        &kp T                           &kp Y        &kp U            &kp I        &kp O         &kp P             &kp AT
+&TD4            &kp Q         &kp W         &kp E        &kp R        &kp T                           &kp Y        &kp U            &kp I        &kp O         &kp P             &TD6
 &kp TAB         &kp A         &kp S         &kp D        &kp F        &kp G                           &kp H        &kp J            &kp K        &kp L         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B        &none  &kp C_MUTE  &kp N        &kp M            &kp MINUS    &kp COMMA     &kp PERIOD        &kp SEMICOLON
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 1 SPACE  &lt 1 SPACE                     &lt 3 ENTER  &lt 3 BACKSPACE  &lt 2 LANG1  &kp QUESTION  &kp EXCLAMATION   &kp SQT
@@ -315,7 +315,7 @@
 
         Editor_P1 {
             bindings = <
-&kp V  &none  &none  &none      &none      &kp C                                &none  &none  &none  &none  &none  &none
+&kp V  &none  &none  &none      &none      &kp C                                &none  &none  &none  &none  &none  &TD7
 &none  &none  &none  &none      &kp B      &mt LEFT_GUI LEFT_ALT                &none  &none  &none  &none  &none  &none
 &none  &kp S  &none  &none      &kp E      &none                  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &kp LSHFT  &kp SPACE  &mo 7                                &none  &none  &none  &none  &none  &none

@@ -145,6 +145,20 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1>, <&to 0>;
         };
+
+        TD6: TD6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD6";
+            #binding-cells = <0>;
+            bindings = <&kp AT_SIGN>, <&to 6>;
+        };
+
+        TD7: TD7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD7";
+            #binding-cells = <0>;
+            bindings = <&none>, <&to 0>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };

@@ -132,32 +132,32 @@
             quick-tap-ms = <200>;
         };
 
-        TD4: TD4 {
+        TD_BAtoC1: TD_BAtoC1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD4";
+            label = "TD_BATOC1";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&to 4>;
         };
 
-        TD5: TD5 {
+        TD_C1toBA: TD_C1toBA {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD5";
+            label = "TD_C1TOBA";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1>, <&to 0>;
         };
 
-        TD6: TD6 {
+        TD_BAtoP1: TD_BAtoP1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD6";
+            label = "TD_BATOP1";
             #binding-cells = <0>;
             bindings = <&kp AT_SIGN>, <&to 6>;
         };
 
-        TD7: TD7 {
+        TD_P1toBA: TD_P1toBA {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD7";
+            label = "TD_P1TOBA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&kp V>, <&to 0>;
         };
     };
 
@@ -218,7 +218,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&TD4            &kp Q         &kp W         &kp E        &kp R        &kp T                               &kp Y        &kp U            &kp I        &kp O         &kp P             &TD6
+&TD_BAtoC1      &kp Q         &kp W         &kp E        &kp R        &kp T                               &kp Y        &kp U            &kp I        &kp O         &kp P             &TD_BAtoP1
 &kp TAB         &kp A         &kp S         &kp D        &kp F        &kp G                               &kp H        &kp J            &kp K        &kp L         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B        &kp ENTER  &kp C_MUTE  &kp N        &kp M            &kp MINUS    &kp COMMA     &kp PERIOD        &kp SEMICOLON
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 1 SPACE  &lt 1 SPACE                         &lt 3 ENTER  &lt 3 BACKSPACE  &lt 2 LANG1  &kp QUESTION  &kp EXCLAMATION   &kp SQT
@@ -291,7 +291,7 @@
         Editor_C1 {
             display-name = "Edit_C1";
             bindings = <
-&TD5          &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_5                         &none     &none     &none      &none  &none  &none
+&TD_C1toBA    &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_5                         &none     &none     &none      &none  &none  &none
 &kp NUMBER_2  &kp LEFT_SHIFT  &kp N      &kp MINUS             &kp I              &kp LEFT_ALT                         &none     &kp UP    &none      &none  &none  &none
 &kp NUMBER_3  &kp P           &kp M      &kp NON_US_BACKSLASH  &kp E              &kp G         &kp ENTER  &kp C_MUTE  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none
 &kp NUMBER_4  &kp EQUAL       &kp SLASH  &kp LCTRL             &kp SPACE          &mo 5                                &none     &none     &none      &none  &none  &none
@@ -315,7 +315,7 @@
 
         Editor_P1 {
             bindings = <
-&kp V  &none  &none  &kp LG(LS(Z))  &kp LG(Z)  &kp C                                    &none  &none  &none  &none  &none  &TD7
+&kp V  &none  &none  &kp LG(LS(Z))  &kp LG(Z)  &kp C                                    &none  &none  &none  &none  &none  &TD_P1toBA
 &none  &none  &none  &none          &kp B      &mt LEFT_GUI LEFT_ALT                    &none  &none  &none  &none  &none  &none
 &none  &kp S  &none  &none          &kp E      &none                  &kp ENTER  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &kp LSHFT      &kp SPACE  &mo 7                                    &none  &none  &none  &none  &none  &none

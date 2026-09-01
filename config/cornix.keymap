@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BATOP1";
             #binding-cells = <0>;
-            bindings = <&kp AT_SIGN>, <&to 6>;
+            bindings = <&kp AT_SIGN>, <&to 7>;
         };
 
         TD_P1toBA: TD_P1toBA {
@@ -291,7 +291,7 @@
         Editor_C1 {
             display-name = "Edit_C1";
             bindings = <
-&TD_C1toBA    &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_5                         &none     &none     &none      &none  &none  &none
+&TD_C1toBA    &kp Y           &kp J      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &mo 6                                &none     &none     &none      &none  &none  &none
 &kp NUMBER_2  &kp LEFT_SHIFT  &kp N      &kp MINUS             &kp I              &kp LEFT_ALT                         &none     &kp UP    &none      &none  &none  &none
 &kp NUMBER_3  &kp P           &kp M      &kp NON_US_BACKSLASH  &kp E              &kp G         &kp ENTER  &kp C_MUTE  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none
 &kp NUMBER_4  &kp EQUAL       &kp SLASH  &kp LCTRL             &kp SPACE          &mo 5                                &none     &none     &none      &none  &none  &none
@@ -313,12 +313,23 @@
             label = "Edit_C2";
         };
 
+        Editor_C3 {
+            bindings = <
+&trans  &trans  &trans  &kp T   &kp NUMBER_5  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp U   &trans  &trans  &trans        &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &kp LANG2                  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Edit_C3";
+        };
+
         Editor_P1 {
             bindings = <
 &kp V  &none  &none  &kp LG(LS(Z))  &kp LG(Z)  &kp C                                    &none  &none  &none  &none  &none  &TD_P1toBA
 &none  &none  &none  &none          &kp B      &mt LEFT_GUI LEFT_ALT                    &none  &none  &none  &none  &none  &none
 &none  &kp S  &none  &none          &kp E      &none                  &kp ENTER  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &kp LSHFT      &kp SPACE  &mo 7                                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &kp LSHFT      &kp SPACE  &mo 8                                    &none  &none  &none  &none  &none  &none
             >;
 
             label = "Edit_P1";
